@@ -273,7 +273,7 @@ public class CommonController {
         Connection con = DatabaseConnection.getDatabaseConnection();
         JasperDesign jsd = null;
         if (Language.equalsIgnoreCase(Options.LANG_ENGLISH)) {
-            jsd = JRXmlLoader.load("reports\\reorder_items.jrxml"); //src\\cazzendra\\pos\\
+            jsd = JRXmlLoader.load("reports/reorder_items.jrxml"); //src\\cazzendra\\pos\\
         } else if (Language.equalsIgnoreCase(Options.LANG_SINHALA)) {
             jsd = JRXmlLoader.load("reports\\sinhala_reorder_items.jrxml"); //src\\cazzendra\\pos\\
         }

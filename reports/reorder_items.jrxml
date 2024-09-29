@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reorder_items" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+<!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reorder_items" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e318eeef-6aa7-4145-adac-654f81b892e1">
 	<property name="ireport.zoom" value="1.6105100000000008"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
@@ -18,108 +19,117 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="49" splitType="Stretch">
+		<band height="78" splitType="Stretch">
 			<staticText>
-				<reportElement x="6" y="4" width="215" height="20"/>
-				<textElement>
-					<font fontName="Ubuntu Medium" size="14" isBold="true"/>
+				<reportElement x="5" y="15" width="545" height="20" uuid="6e59ddc9-750b-4fc1-8b7d-d4363dd68377"/>
+				<textElement textAlignment="Center">
+					<font fontName="SF Pro Rounded" size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[RE-ORDER ITEM LIST]]></text>
+				<text><![CDATA[Items re-order report]]></text>
 			</staticText>
-			<textField>
-				<reportElement x="6" y="24" width="321" height="20"/>
-				<textElement>
-					<font fontName="Ubuntu Medium" size="12"/>
+			<textField isBlankWhenNull="true">
+				<reportElement x="5" y="35" width="174" height="20" uuid="55d2571c-e5c7-40bb-9468-d38765ac18a9"/>
+				<textElement markup="none">
+					<font fontName="SF Pro Rounded" size="14"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{shopName}]]></textFieldExpression>
 			</textField>
 		</band>
 	</title>
 	<pageHeader>
-		<band height="16" splitType="Stretch">
+		<band height="18" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="1" width="555" height="17" backcolor="#E9FAFF" uuid="d566a238-85b9-4ff0-a00a-eee084684680"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
 			<staticText>
-				<reportElement x="7" y="0" width="67" height="16"/>
+				<reportElement x="20" y="2" width="212" height="16" backcolor="#E9FAFF" uuid="e108fe80-b489-423e-bb72-84c64fb6c318"/>
 				<box>
-					<bottomPen lineWidth="1.0" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
 				</box>
 				<textElement>
-					<font fontName="Ubuntu Medium" size="12" isBold="true"/>
+					<font fontName="SF Pro Rounded" size="12" isBold="false"/>
 				</textElement>
-				<text><![CDATA[Item Code]]></text>
+				<text><![CDATA[Brand Name]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="74" y="0" width="100" height="16"/>
+				<reportElement x="233" y="2" width="101" height="16" backcolor="#E9FAFF" uuid="02e7ba04-8df2-4adb-bb33-224f4f2e9332"/>
 				<box>
-					<bottomPen lineWidth="1.0" lineColor="#000000"/>
-				</box>
-				<textElement>
-					<font fontName="Ubuntu Medium" size="12" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Item Barcode]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="466" y="0" width="85" height="16"/>
-				<box>
-					<bottomPen lineWidth="1.0" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
 				</box>
 				<textElement textAlignment="Right">
-					<font fontName="Ubuntu Medium" size="12" isBold="true"/>
+					<font fontName="SF Pro Rounded" size="12" isBold="false"/>
 				</textElement>
-				<text><![CDATA[Quantity]]></text>
+				<text><![CDATA[Code]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="174" y="0" width="292" height="16"/>
+				<reportElement x="334" y="2" width="128" height="16" backcolor="#E9FAFF" uuid="eb298740-ab90-4ff3-a959-129ce3b50b10"/>
 				<box>
-					<bottomPen lineWidth="1.0" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
 				</box>
-				<textElement>
-					<font fontName="Ubuntu Medium" size="12" isBold="true"/>
+				<textElement textAlignment="Right">
+					<font fontName="SF Pro Rounded" size="12" isBold="false"/>
 				</textElement>
-				<text><![CDATA[Item Name]]></text>
+				<text><![CDATA[Barcode]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="469" y="2" width="86" height="16" backcolor="#E9FAFF" uuid="9b0fef35-693f-4e7b-8282-db3d0c7378ee"/>
+				<box>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="SF Pro Rounded" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Available Qty]]></text>
 			</staticText>
 		</band>
 	</pageHeader>
 	<columnHeader>
-		<band height="1" splitType="Stretch"/>
+		<band height="5" splitType="Stretch"/>
 	</columnHeader>
 	<detail>
 		<band height="13" splitType="Stretch">
 			<textField>
-				<reportElement x="7" y="0" width="67" height="13"/>
+				<reportElement x="462" y="0" width="93" height="13" uuid="c1c3188f-7d5d-4136-b14d-2f1269578e1f"/>
 				<box>
-					<rightPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.0"/>
 				</box>
-				<textElement>
-					<font fontName="Ubuntu"/>
+				<textElement textAlignment="Right">
+					<font fontName="SF Pro Rounded"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{item_code}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{stock_qty}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="74" y="0" width="100" height="13"/>
+				<reportElement x="20" y="0" width="218" height="13" uuid="2b57e93c-5121-4497-a772-016b5a54d715"/>
 				<box>
-					<rightPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.0"/>
 				</box>
 				<textElement>
-					<font fontName="Ubuntu"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{item_barcode}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="174" y="0" width="292" height="13"/>
-				<box>
-					<rightPen lineWidth="0.25"/>
-				</box>
-				<textElement>
-					<font fontName="Ubuntu"/>
+					<font fontName="SF Pro Rounded"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{item_name}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="466" y="0" width="85" height="13"/>
+				<reportElement x="239" y="0" width="95" height="13" uuid="4f707998-0e87-4648-86bb-bf5ff6a49eb3"/>
+				<box>
+					<rightPen lineWidth="0.0"/>
+				</box>
 				<textElement textAlignment="Right">
-					<font fontName="Ubuntu"/>
+					<font fontName="SF Pro Rounded"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{stock_qty}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{item_barcode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="0" width="122" height="13" uuid="7b9973de-de28-4fd3-9a14-66691f003ad3"/>
+				<box>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="SF Pro Rounded"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{item_code}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
